@@ -24,7 +24,7 @@ app.get('/genres', (req,res) => {
 
 
         //!!MOVIE ENDPOINTS!!//
-//Add new movie POST
+//Add a new movie POST
 app.post('/movies', (req,res) => {
     //{ maybe like a this
         //"movie_name": "Inception",
@@ -32,17 +32,17 @@ app.post('/movies', (req,res) => {
         //"genre_id": 1}
 });
 
-//retrieve all movies GET
+//retrieve all movies
 app.get('/movies', (req,res) => {
 });
 
-//Retrieve specific movie by id GET
+//Retrieve specific movie by id
 app.get('/movies/{movie_id}', (req,res) => {
 });
 
 
         //!!USER ENDPOINTS!!//
-//creates a new user//
+//Add a new user//
 app.post('/users', (req,res) => {
     //{ example
     //    "first_name": "John",
@@ -62,7 +62,7 @@ app.get('/users/{user_id}', (req,res) => {
 
 
         //!!REVIEW ENDPOINTS!!//
-//Creates a new review//
+//Add a new review//
 app.post('/reviews', (req,res) => {
     //{ example mayb?
     //    "movie_id": 1,
@@ -82,4 +82,18 @@ app.get('/reviews/{movie_id}', (req,res) => {
 
 //Retrieve reviews by a specific user//
 app.get('/reviews/user/{user_id}', (req,res) => {
+});
+
+
+        //!!FAVOURITES ENDPOINTS!!//
+//Add a new movie to user's favourites//
+app.post('/favourites', (req,res) => {
+});
+
+//Retrieve all favorite movies//
+app.get('/favourites', (req,res) => {
+});
+
+//Retrieve favorites for a specific user.
+app.get('/favourites/{user_id}', (req,res) => {
 });
