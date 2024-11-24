@@ -10,19 +10,19 @@ app.use(express.json());
 app.listen(3001, () => {
     console.log("Server is running in port 3001");
 });
-        //!!GENRES!!//
 
+        //!!GENRES ENDPOINTS!!//
 //Add new genre maybe post
 app.post('/genres', (req,res) => {
     //{"genre_name": "Action"}//
-    //maybe like this
+    //maybe like this//
 });
 //GET all genres
 app.get('/genres', (req,res) => {
 });
 
 
-        //!!MOVIES!!//
+        //!!MOVIE ENDPOINTS!!//
 //Add new movie POST
 app.post('/movies', (req,res) => {
     //{ maybe like a this
@@ -35,4 +35,24 @@ app.get('/movies', (req,res) => {
 });
 //Retrieve specific movie by id GET
 app.get('/movies/{movie_id}', (req,res) => {
+});
+
+
+        //!!USER ENDPOINTS!!//
+//creates a new user//
+app.post('/users', (req,res) => {
+    //{ example
+    //    "first_name": "John",
+    //    "username": "john_doe",
+    //    "users_password": "password123",
+    //    "year_of_birth": 1990
+    //  };
+});
+
+//retrieve all users//
+app.get('/users', (req,res) => {
+});
+
+//retrieve specific user by id//
+app.get('/users/{user_id}', (req,res) => {
 });
