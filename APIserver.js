@@ -17,6 +17,7 @@ app.post('/genres', (req,res) => {
     //{"genre_name": "Action"}//
     //maybe like this//
 });
+
 //GET all genres
 app.get('/genres', (req,res) => {
 });
@@ -30,9 +31,11 @@ app.post('/movies', (req,res) => {
         //"movie_year": 2010,
         //"genre_id": 1}
 });
+
 //retrieve all movies GET
 app.get('/movies', (req,res) => {
 });
+
 //Retrieve specific movie by id GET
 app.get('/movies/{movie_id}', (req,res) => {
 });
@@ -55,4 +58,28 @@ app.get('/users', (req,res) => {
 
 //retrieve specific user by id//
 app.get('/users/{user_id}', (req,res) => {
+});
+
+
+        //!!REVIEW ENDPOINTS!!//
+//Creates a new review//
+app.post('/reviews', (req,res) => {
+    //{ example mayb?
+    //    "movie_id": 1,
+    //    "user_id": 2,
+    //    "stars": 5,
+    //    "review_text": "Amazing movie!"
+    //  }
+});
+
+//Retrieve all reviews//
+app.get('/reviews', (req,res) => {
+});
+
+//Retrieve reviews for a specific movie//
+app.get('/reviews/{movie_id}', (req,res) => {
+});
+
+//Retrieve reviews by a specific user//
+app.get('/reviews/user/{user_id}', (req,res) => {
 });
