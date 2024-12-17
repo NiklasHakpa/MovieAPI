@@ -11,4 +11,3 @@ const pgPool = new pg.Pool({
 });
 
 export {pgPool};
-
